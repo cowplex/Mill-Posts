@@ -1,0 +1,2 @@
+This file can stay in this folder or copied on your system.
+When posting G code change the cnc file to one in this folder.

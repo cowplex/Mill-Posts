@@ -1,0 +1,21 @@
+=== HAAS POST Features ===
+
+- 90 Degree head support.
+
+- Automatic TSC and TAB. Post will turn on TSC in addition to flood coolant if the tool comment starts with the string "(TSC)". Post will turn on TAB instead of air if the tool comment starts with the string "(TAB)".
+
+- Auto Coolant. Post will turn on coolant automatically. Based on cycle type - Drill, Deep Hole, Chip Break and Tap automatically turn on flood. All others turn on air, unless the tool comment contains the string "(FLOOD)", in which case it will turn on the flood for everything. Use by choosing "Oil" as the coolant type.
+
+- Tool Change Position. If the tool change (X,Y) location is (0,0), the machine will not move from where it stopped the last cycle to change tools. If non-zero numbers are present, the machine will move to those coordinates before performing a tool change. Useful for avoiding hitting large parts with the swing-arm.
+
+
+=== Milltronics POST Features ===
+
+-Sane Deep Hole, and support for step 1 and 2. Deep hole will now peck based on surface zero, not clear location. Step 1 and Step 2 in Deep Hole now work as shown in the diagram.
+
+
+=== TODO ===
+
+-Boring Macro
+-Chamfering Macro
+-Update Milltronics posts to have Autocoolant and Tool Change Position
